@@ -26,7 +26,6 @@
 // //task8
 // let elem8=document.getElementsByClassName("fc_rules");
 // console.log(elem8);
-// //task9 НЕ ПОЛУЧАЄТЬСЯ В ЧОМУ ПРОБЛЕМА?
-// let elem9=document.getElementById("li_class");
-// elem9.style.fontColor='red'
-// document.write(elem9)
+// // //task9 НЕ ПОЛУЧАЄТЬСЯ В ЧОМУ ПРОБЛЕМА?
+// let elem9=document.getElementsByTagName("li");
+// elem9.style.color='red'

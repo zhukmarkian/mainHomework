@@ -71,21 +71,21 @@
 // }
 
 //task4
-const ArrayUsers='arrayUsers'
+// const ArrayUsers='arrayUsers'
 
-let tempUser={};
-let btn=document.getElementById('btn')
-const form1 = document.forms.myForm
-form1.btn.onclick = ev =>{
-    ev.preventDefault();
-let person={}
-for(let i=0;i<form1.children.length;i++){
-const form1Element=form1.children[i];
-if(form1Element.name && form1Element.type !=='submit'){
-    person[form1Element.name]=form1Element.value
-}
-}
-person.id=new Date ().getTime()
-console.log(person)
+// let tempUser={};
+// let btn=document.getElementById('btn')
+// const form1 = document.forms.myForm
+// form1.btn.onclick = ev =>{
+//     ev.preventDefault();
+// let person={}
+// for(let i=0;i<form1.children.length;i++){
+// const form1Element=form1.children[i];
+// if(form1Element.name && form1Element.type !=='submit'){
+//     person[form1Element.name]=form1Element.value
+// }
+// }
+// person.id=new Date ().getTime()
+// console.log(person)
 
-}
+// }

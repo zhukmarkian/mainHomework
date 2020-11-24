@@ -397,7 +397,6 @@
 // princ.findPopelushka(girls);
 
 //task7
- 'НЕ ПОЛУЧАЄТЬСЯ!!!!'
 // function Popelushka(name,age,footsize){ 
 //         this.name=name;
 //         this.age=age;
@@ -412,9 +411,9 @@
 //     this.findPopelushka=function(girls){
 //         let find=null;
        
-//     find=girls.find(item=>item.footsize===this.footsize)
+//     find=girls.find(item=>item.footsize===this.shooezsize)
 //     find
-//     ?console.log('My Popelushka name'+ find.name);
+//     console.log('My Popelushka name'+ find.name);
 //     console.log('I am not find my Popelushka')
 //     }
 // }

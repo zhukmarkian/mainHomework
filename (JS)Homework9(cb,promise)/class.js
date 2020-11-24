@@ -140,127 +140,127 @@
 
 
 //TASK PROMISE
-// function getUp(time){
-//     return new Promise((resolve,reject)=>{
-//     console.log('Hellow world')
-//     setTimeout(()=>{
-//       if(time>10){
-//        reject('Сьогодні буду цілий день спати',);
-//       }
-//    resolve(' Пора вставати з ліжка уже 10')
-//     },2000)
-// });
-// }
-// function breakfeast(food){
-//     return new Promise((resolve,reject)=>{
-//     setTimeout(()=>{
-//         console.log('Піду подивлюсь що є в холодильнику')
-//         if(food<2){
-//          reject('Блін холодильник пустий,треба час тратити на супермаркет')
+function getUp(time){
+    return new Promise((resolve,reject)=>{
+    console.log('Hellow world')
+    setTimeout(()=>{
+      if(time>10){
+       reject('Сьогодні буду цілий день спати',);
+      }
+   resolve(' Пора вставати з ліжка уже 10')
+    },2000)
+});
+}
+function breakfeast(food){
+    return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        console.log('Піду подивлюсь що є в холодильнику')
+        if(food<2){
+         reject('Блін холодильник пустий,треба час тратити на супермаркет')
           
-//         }
-//   resolve('є яйца і сосіски ,можу приготувати їх ')
-//     },1000)
-// })
-// }
-// function homeWork(ex,){
-//     return new Promise((resolve,reject)=>{
-//     setTimeout(()=>{
-//         console.log('Сідаю писати домашнє')
-//         if(ex>10){
-//            reject('до одного місця то всьо ,це дуже важке ')
+        }
+  resolve('є яйца і сосіски ,можу приготувати їх ')
+    },1000)
+})
+}
+function homeWork(ex,){
+    return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        console.log('Сідаю писати домашнє')
+        if(ex>10){
+           reject('до одного місця то всьо ,це дуже важке ')
            
-//         }
-//        resolve('`вчусь і роблю всі домашні завдання')
-//     },1000)
-// })
-// };
-// function goGym(hours){
-//     return new Promise((resolve,reject)=>{
-//     setTimeout(()=>{
-//         console.log('Збираюсь і іду в зал')
-//         if(hours>2){
-//          reject('зараз прийду до дому і засну,бо я дуже вимучений ')
+        }
+       resolve('`вчусь і роблю всі домашні завдання')
+    },1000)
+})
+};
+function goGym(hours){
+    return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        console.log('Збираюсь і іду в зал')
+        if(hours>2){
+         reject('зараз прийду до дому і засну,бо я дуже вимучений ')
         
-//         }
-//    resolve('біжу до дому, бо ще куча справ')
-//     },500)
-// })
-// };
+        }
+   resolve('біжу до дому, бо ще куча справ')
+    },500)
+})
+};
 
-// function comeHome(minuts){
-//     return new Promise((resolve,reject)=>{
-//     setTimeout(()=>{
-//         console.log('Час прийняти теплий душ')
-//         if(minuts>30){
-//          reject('блін вже немає часу, знову буд смердіти')
+function comeHome(minuts){
+    return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        console.log('Час прийняти теплий душ')
+        if(minuts>30){
+         reject('блін вже немає часу, знову буд смердіти')
             
-//         }
-//      resolve('приймаю теплий душ і швидко вечеряю')
-//     },100)
-// })
-// };
-// function itTime(oclock){
-//     return new Promise((resolve,reject)=>{
-//     setTimeout(()=>{
-//         console.log('Час навчання')
-//         if(oclock>9){
-//            reject('очі помалу закриваються Z z z z! ')
+        }
+     resolve('приймаю теплий душ і швидко вечеряю')
+    },100)
+})
+};
+function itTime(oclock){
+    return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        console.log('Час навчання')
+        if(oclock>9){
+           reject('очі помалу закриваються Z z z z! ')
             
-//         }
-//       resolve(' пробую писати домашнє завдання і уважно слухаю лекцію')
-//     },1000)
+        }
+      resolve(' пробую писати домашнє завдання і уважно слухаю лекцію')
+    },1000)
 
-// })
-// };
+})
+};
 
-// function sleepTime(pm,calback){
-//     return new Promise((resolve,reject)=>{
-//     setTimeout(()=>{
-//         console.log('Вже пізня година')
-//         if(pm>12){
-//             reject('блін знову перебив собі сон')
+function sleepTime(pm,calback){
+    return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        console.log('Вже пізня година')
+        if(pm>12){
+            reject('блін знову перебив собі сон')
             
-//         }
-//        resolve('сьогодні був важкий насичений день ,пора спати')
-//     },1000)
-// });
-// }
+        }
+       resolve('сьогодні був важкий насичений день ,пора спати')
+    },1000)
+});
+}
  
-// getUp(9)
-//     .then ((date)=>{
-//         console.log(date);
+getUp(9)
+    .then ((date)=>{
+        console.log(date);
 
-//         return breakfeast(3);
-//     })
-//     .then((date)=>{
-//         console.log(date);
+        return breakfeast(3);
+    })
+    .then((date)=>{
+        console.log(date);
 
-//         return homeWork(9);
-//     })
-//     .then ((date)=>{
-//         console.log(date);
+        return homeWork(9);
+    })
+    .then ((date)=>{
+        console.log(date);
 
-//         return goGym(1);
-//     })
-//     .then ((date)=>{
-//         console.log(date);
+        return goGym(1);
+    })
+    .then ((date)=>{
+        console.log(date);
 
-//         return comeHome(20);
-//     })
-//     .then((date)=>{
-//         console.log(date);
+        return comeHome(20);
+    })
+    .then((date)=>{
+        console.log(date);
 
-//         return itTime(8);
-//     })
-//     .then((date)=>{
-//         console.log(date);
+        return itTime(8);
+    })
+    .then((date)=>{
+        console.log(date);
 
-//         return sleepTime(11);
-//     })
-//     .then ((date)=>{
-//         console.log(date)
-//     })
-//     .catch(err=>{
-//         console.log(err)
-//     })
+        return sleepTime(11);
+    })
+    .then ((date)=>{
+        console.log(date)
+    })
+    .catch(err=>{
+        console.log(err)
+    })
